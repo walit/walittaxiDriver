@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B13FA4422605196006608F3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13FA4322605196006608F3 /* Request.swift */; };
+		6B13FA4822607748006608F3 /* CompleteRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13FA4722607748006608F3 /* CompleteRideViewController.swift */; };
+		6B13FA4A2260A2FD006608F3 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B13FA492260A2FD006608F3 /* alert.mp3 */; };
+		6B13FA4E2260B1AE006608F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B13FA4D2260B1AE006608F3 /* GoogleService-Info.plist */; };
+		6B158241225C3CD400B0BB3B /* ComplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B158240225C3CD400B0BB3B /* ComplainViewController.swift */; };
+		6B158243225C418B00B0BB3B /* ComplainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B158242225C418B00B0BB3B /* ComplainHandler.swift */; };
+		6B158245225C465C00B0BB3B /* HomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B158244225C465C00B0BB3B /* HomeHandler.swift */; };
+		6B35BB9622B6A2C0004C1867 /* HistoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B35BB9522B6A2C0004C1867 /* HistoryHandler.swift */; };
+		6B35BB9D22B7F257004C1867 /* CashHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B35BB9C22B7F257004C1867 /* CashHistoryViewController.swift */; };
+		6B367F5E22BF6D1900C58030 /* CompleteRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B367F5D22BF6D1900C58030 /* CompleteRide.swift */; };
+		6B367F6022BF861800C58030 /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B367F5F22BF861800C58030 /* ChangePassViewController.swift */; };
+		6B5BBA372257BC14006891B7 /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA362257BC14006891B7 /* LoginHandler.swift */; };
+		6B5BBA3A22587080006891B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA3922587080006891B7 /* User.swift */; };
+		6B5BBA3C22587749006891B7 /* ChanagePasswordHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA3B22587749006891B7 /* ChanagePasswordHandler.swift */; };
+		6B5BBA3F22587E0B006891B7 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA3E22587E0B006891B7 /* ForgotViewController.swift */; };
+		6B5BBA4122588085006891B7 /* ForgotPasswordHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA4022588085006891B7 /* ForgotPasswordHandler.swift */; };
+		6B5BBA4322588709006891B7 /* OTPVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA4222588709006891B7 /* OTPVerifyViewController.swift */; };
+		6B5BBA4522588C80006891B7 /* ResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA4422588C80006891B7 /* ResetViewController.swift */; };
+		6B5BBA4722589185006891B7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA4622589185006891B7 /* LocationManager.swift */; };
+		6B5BBA532259DADA006891B7 /* BankDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA522259DADA006891B7 /* BankDetailsViewController.swift */; };
+		6B5BBA552259DF3C006891B7 /* AddBankDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA542259DF3C006891B7 /* AddBankDetailViewController.swift */; };
+		6B5BBA5A225AF8CE006891B7 /* BankHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA59225AF8CE006891B7 /* BankHandler.swift */; };
+		6B5BBA5C225AF960006891B7 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BBA5B225AF960006891B7 /* Bank.swift */; };
+		6B73D31022B7F741006E4495 /* CashHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B73D30F22B7F741006E4495 /* CashHistoryTableViewCell.swift */; };
+		6B73D31222B7F83C006E4495 /* CashHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B73D31122B7F83C006E4495 /* CashHistory.swift */; };
+		6BA72FD322BFAF0C00E44861 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA72FD222BFAF0C00E44861 /* ProfileTableViewCell.swift */; };
+		6BA72FD522BFB49000E44861 /* ProfileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA72FD422BFB49000E44861 /* ProfileHandler.swift */; };
+		6BA72FDA22C77F8C00E44861 /* HostoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA72FD922C77F8C00E44861 /* HostoryDetailViewController.swift */; };
+		6BA72FDC22C7DE1800E44861 /* ImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA72FDB22C7DE1800E44861 /* ImageViewViewController.swift */; };
+		6BA72FDE22C7E03700E44861 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA72FDD22C7E03700E44861 /* TextField.swift */; };
+		6BFFF4A922D0959800859F99 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFFF4A822D0959800859F99 /* WebKit.framework */; };
+		ACF9DAB4A667B6F8E05F516A /* Pods_Walit_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE8967A6BCAFA82A98E797B /* Pods_Walit_Driver.framework */; };
+		DC0BC5A6222C024E003BAC42 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC5A5222C024E003BAC42 /* SideMenuViewController.swift */; };
+		DC0BC5A8222C0264003BAC42 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC5A7222C0264003BAC42 /* SideMenuTableViewCell.swift */; };
+		DC0BC5AA222C0691003BAC42 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC5A9222C0691003BAC42 /* NavigationController.swift */; };
+		DC0BC5AC222C06BD003BAC42 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC5AB222C06BC003BAC42 /* MainViewController.swift */; };
+		DC0BC5AE222C0C4D003BAC42 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC5AD222C0C4D003BAC42 /* SettingViewController.swift */; };
+		DC0BC5B0222C1A20003BAC42 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC5AF222C1A20003BAC42 /* IntroViewController.swift */; };
+		DC0BC5B4222C422E003BAC42 /* home (1).png in Resources */ = {isa = PBXBuildFile; fileRef = DC0BC5B3222C422D003BAC42 /* home (1).png */; };
+		DCD0CAC4222AEFE500A97A0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAC3222AEFE500A97A0D /* AppDelegate.swift */; };
+		DCD0CAC9222AEFE500A97A0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAC7222AEFE500A97A0D /* Main.storyboard */; };
+		DCD0CACB222AEFE900A97A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CACA222AEFE900A97A0D /* Assets.xcassets */; };
+		DCD0CACE222AEFE900A97A0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CACC222AEFE900A97A0D /* LaunchScreen.storyboard */; };
+		DCD0CAD7222AF2F600A97A0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAD6222AF2F600A97A0D /* LoginViewController.swift */; };
+		DCD0CADC222AF74500A97A0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAD8222AF74500A97A0D /* Constants.swift */; };
+		DCD0CADF222AF74500A97A0D /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CADB222AF74500A97A0D /* iOSDevCenters+GIF.swift */; };
+		DCD0CAE2222AFAEB00A97A0D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAE1222AFAEB00A97A0D /* Global.swift */; };
+		DCD0CAE4222AFB0B00A97A0D /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAE3222AFB0A00A97A0D /* Reach.swift */; };
+		DCD0CAE6222AFBC100A97A0D /* walit-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAE5222AFBC100A97A0D /* walit-gif.gif */; };
+		DCD0CAE8222AFBC800A97A0D /* ezgif.com-gif-maker (2).gif in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAE7222AFBC800A97A0D /* ezgif.com-gif-maker (2).gif */; };
+		DCD0CAEA222AFEA100A97A0D /* bell-musical-tool.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAE9222AFEA100A97A0D /* bell-musical-tool.png */; };
+		DCD0CAEC222AFF0C00A97A0D /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAEB222AFF0C00A97A0D /* menu.png */; };
+		DCD0CAEE222B9BB300A97A0D /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAED222B9BB300A97A0D /* Shadow.swift */; };
+		DCD0CAF0222B9CA000A97A0D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAEF222B9CA000A97A0D /* ProfileViewController.swift */; };
+		DCD0CAF2222B9E1600A97A0D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAF1222B9E1500A97A0D /* calendar.png */; };
+		DCD0CAF4222B9F2300A97A0D /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAF3222B9F2300A97A0D /* hand.png */; };
+		DCD0CAF6222B9F2C00A97A0D /* frontal-taxi-cab.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD0CAF5222B9F2C00A97A0D /* frontal-taxi-cab.png */; };
+		DCD0CAF8222BA13400A97A0D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAF7222BA13400A97A0D /* HistoryViewController.swift */; };
+		DCD0CAFB222BAB2F00A97A0D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAFA222BAB2F00A97A0D /* HistoryTableViewCell.swift */; };
+		DCD0CAFD222BB1D700A97A0D /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAFC222BB1D700A97A0D /* PrivacyViewController.swift */; };
+		DCD0CAFF222BB1EC00A97A0D /* T&CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CAFE222BB1EC00A97A0D /* T&CViewController.swift */; };
+		DCD0CB01222BB8C800A97A0D /* CollectCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CB00222BB8C800A97A0D /* CollectCashViewController.swift */; };
+		DCD0CB04222BCBC600A97A0D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CB03222BCBC600A97A0D /* HomeViewController.swift */; };
+		DCD0CB06222BCEAD00A97A0D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0CB05222BCEAD00A97A0D /* RoundButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B13FA4322605196006608F3 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6B13FA4722607748006608F3 /* CompleteRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRideViewController.swift; sourceTree = "<group>"; };
+		6B13FA492260A2FD006608F3 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
+		6B13FA4D2260B1AE006608F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6B13FA4F2260B9E9006608F3 /* Walit Driver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Walit Driver.entitlements"; sourceTree = "<group>"; };
+		6B158240225C3CD400B0BB3B /* ComplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainViewController.swift; sourceTree = "<group>"; };
+		6B158242225C418B00B0BB3B /* ComplainHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainHandler.swift; sourceTree = "<group>"; };
+		6B158244225C465C00B0BB3B /* HomeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHandler.swift; sourceTree = "<group>"; };
+		6B35BB9522B6A2C0004C1867 /* HistoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHandler.swift; sourceTree = "<group>"; };
+		6B35BB9C22B7F257004C1867 /* CashHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashHistoryViewController.swift; sourceTree = "<group>"; };
+		6B367F5D22BF6D1900C58030 /* CompleteRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRide.swift; sourceTree = "<group>"; };
+		6B367F5F22BF861800C58030 /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		6B5BBA362257BC14006891B7 /* LoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
+		6B5BBA3922587080006891B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6B5BBA3B22587749006891B7 /* ChanagePasswordHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanagePasswordHandler.swift; sourceTree = "<group>"; };
+		6B5BBA3E22587E0B006891B7 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		6B5BBA4022588085006891B7 /* ForgotPasswordHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordHandler.swift; sourceTree = "<group>"; };
+		6B5BBA4222588709006891B7 /* OTPVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyViewController.swift; sourceTree = "<group>"; };
+		6B5BBA4422588C80006891B7 /* ResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewController.swift; sourceTree = "<group>"; };
+		6B5BBA4622589185006891B7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6B5BBA522259DADA006891B7 /* BankDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsViewController.swift; sourceTree = "<group>"; };
+		6B5BBA542259DF3C006891B7 /* AddBankDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBankDetailViewController.swift; sourceTree = "<group>"; };
+		6B5BBA59225AF8CE006891B7 /* BankHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHandler.swift; sourceTree = "<group>"; };
+		6B5BBA5B225AF960006891B7 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		6B73D30F22B7F741006E4495 /* CashHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		6B73D31122B7F83C006E4495 /* CashHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashHistory.swift; sourceTree = "<group>"; };
+		6BA72FD222BFAF0C00E44861 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		6BA72FD422BFB49000E44861 /* ProfileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHandler.swift; sourceTree = "<group>"; };
+		6BA72FD922C77F8C00E44861 /* HostoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostoryDetailViewController.swift; sourceTree = "<group>"; };
+		6BA72FDB22C7DE1800E44861 /* ImageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewViewController.swift; sourceTree = "<group>"; };
+		6BA72FDD22C7E03700E44861 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		6BFFF4A822D0959800859F99 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CB807683AB16816208BFBDD9 /* Pods-Walit Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walit Driver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Walit Driver/Pods-Walit Driver.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D2E4A2D3C7007F54A96BD3 /* Pods-Walit Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walit Driver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Walit Driver/Pods-Walit Driver.release.xcconfig"; sourceTree = "<group>"; };
+		DC0BC5A5222C024E003BAC42 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		DC0BC5A7222C0264003BAC42 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		DC0BC5A9222C0691003BAC42 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		DC0BC5AB222C06BC003BAC42 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DC0BC5AD222C0C4D003BAC42 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DC0BC5AF222C1A20003BAC42 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		DC0BC5B3222C422D003BAC42 /* home (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home (1).png"; sourceTree = "<group>"; };
+		DCD0CAC0222AEFE400A97A0D /* Walit Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walit Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD0CAC3222AEFE500A97A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCD0CAC8222AEFE500A97A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCD0CACA222AEFE900A97A0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD0CACD222AEFE900A97A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCD0CACF222AEFE900A97A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD0CAD6222AF2F600A97A0D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DCD0CAD8222AF74500A97A0D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DCD0CADB222AF74500A97A0D /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		DCD0CAE1222AFAEB00A97A0D /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		DCD0CAE3222AFB0A00A97A0D /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		DCD0CAE5222AFBC100A97A0D /* walit-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "walit-gif.gif"; sourceTree = "<group>"; };
+		DCD0CAE7222AFBC800A97A0D /* ezgif.com-gif-maker (2).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ezgif.com-gif-maker (2).gif"; sourceTree = "<group>"; };
+		DCD0CAE9222AFEA100A97A0D /* bell-musical-tool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell-musical-tool.png"; sourceTree = "<group>"; };
+		DCD0CAEB222AFF0C00A97A0D /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		DCD0CAED222B9BB300A97A0D /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		DCD0CAEF222B9CA000A97A0D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DCD0CAF1222B9E1500A97A0D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		DCD0CAF3222B9F2300A97A0D /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
+		DCD0CAF5222B9F2C00A97A0D /* frontal-taxi-cab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frontal-taxi-cab.png"; sourceTree = "<group>"; };
+		DCD0CAF7222BA13400A97A0D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		DCD0CAFA222BAB2F00A97A0D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		DCD0CAFC222BB1D700A97A0D /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		DCD0CAFE222BB1EC00A97A0D /* T&CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "T&CViewController.swift"; sourceTree = "<group>"; };
+		DCD0CB00222BB8C800A97A0D /* CollectCashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectCashViewController.swift; sourceTree = "<group>"; };
+		DCD0CB03222BCBC600A97A0D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DCD0CB05222BCEAD00A97A0D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		DDE8967A6BCAFA82A98E797B /* Pods_Walit_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walit_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD0CABD222AEFE400A97A0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFFF4A922D0959800859F99 /* WebKit.framework in Frameworks */,
+				ACF9DAB4A667B6F8E05F516A /* Pods_Walit_Driver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B15823F225C3CB100B0BB3B /* Complain */ = {
+			isa = PBXGroup;
+			children = (
+				6B158240225C3CD400B0BB3B /* ComplainViewController.swift */,
+			);
+			path = Complain;
+			sourceTree = "<group>";
+		};
+		6B158246225D113100B0BB3B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CB00222BB8C800A97A0D /* CollectCashViewController.swift */,
+				DCD0CB03222BCBC600A97A0D /* HomeViewController.swift */,
+				6B13FA4722607748006608F3 /* CompleteRideViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6B35BB9722B7F20E004C1867 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAF7222BA13400A97A0D /* HistoryViewController.swift */,
+				6B35BB9C22B7F257004C1867 /* CashHistoryViewController.swift */,
+				6BA72FD922C77F8C00E44861 /* HostoryDetailViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		6B35BB9822B7F21A004C1867 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BC5AF222C1A20003BAC42 /* IntroViewController.swift */,
+				DCD0CAD6222AF2F600A97A0D /* LoginViewController.swift */,
+				DCD0CAEF222B9CA000A97A0D /* ProfileViewController.swift */,
+				6B367F5F22BF861800C58030 /* ChangePassViewController.swift */,
+				6BA72FDB22C7DE1800E44861 /* ImageViewViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		6B35BB9922B7F222004C1867 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAFC222BB1D700A97A0D /* PrivacyViewController.swift */,
+				DCD0CAFE222BB1EC00A97A0D /* T&CViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6B35BB9A22B7F22A004C1867 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BC5A5222C024E003BAC42 /* SideMenuViewController.swift */,
+				DC0BC5A9222C0691003BAC42 /* NavigationController.swift */,
+				DC0BC5AB222C06BC003BAC42 /* MainViewController.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		6B35BB9B22B7F232004C1867 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BC5AD222C0C4D003BAC42 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		6B35BB9E22B7F272004C1867 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6B13FA492260A2FD006608F3 /* alert.mp3 */,
+				6B13FA4D2260B1AE006608F3 /* GoogleService-Info.plist */,
+				DCD0CACA222AEFE900A97A0D /* Assets.xcassets */,
+				DC0BC5B3222C422D003BAC42 /* home (1).png */,
+				DCD0CACC222AEFE900A97A0D /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6B35BB9F22B7F28A004C1867 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAC3222AEFE500A97A0D /* AppDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		6B35BBA022B7F2A7004C1867 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAC7222AEFE500A97A0D /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6B5BBA352257BBF7006891B7 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				6B5BBA362257BC14006891B7 /* LoginHandler.swift */,
+				6B5BBA3B22587749006891B7 /* ChanagePasswordHandler.swift */,
+				6B5BBA4022588085006891B7 /* ForgotPasswordHandler.swift */,
+				6B5BBA59225AF8CE006891B7 /* BankHandler.swift */,
+				6B158242225C418B00B0BB3B /* ComplainHandler.swift */,
+				6B158244225C465C00B0BB3B /* HomeHandler.swift */,
+				6B35BB9522B6A2C0004C1867 /* HistoryHandler.swift */,
+				6BA72FD422BFB49000E44861 /* ProfileHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		6B5BBA3822587074006891B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B5BBA3922587080006891B7 /* User.swift */,
+				6B5BBA5B225AF960006891B7 /* Bank.swift */,
+				6B13FA4322605196006608F3 /* Request.swift */,
+				6B73D31122B7F83C006E4495 /* CashHistory.swift */,
+				6B367F5D22BF6D1900C58030 /* CompleteRide.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B5BBA3D22587DF7006891B7 /* Forgot */ = {
+			isa = PBXGroup;
+			children = (
+				6B5BBA3E22587E0B006891B7 /* ForgotViewController.swift */,
+				6B5BBA4222588709006891B7 /* OTPVerifyViewController.swift */,
+				6B5BBA4422588C80006891B7 /* ResetViewController.swift */,
+			);
+			path = Forgot;
+			sourceTree = "<group>";
+		};
+		6B5BBA512259DABC006891B7 /* Bank Details */ = {
+			isa = PBXGroup;
+			children = (
+				6B5BBA522259DADA006891B7 /* BankDetailsViewController.swift */,
+				6B5BBA542259DF3C006891B7 /* AddBankDetailViewController.swift */,
+			);
+			path = "Bank Details";
+			sourceTree = "<group>";
+		};
+		72B8688CE19A3593E4E905A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB807683AB16816208BFBDD9 /* Pods-Walit Driver.debug.xcconfig */,
+				D5D2E4A2D3C7007F54A96BD3 /* Pods-Walit Driver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D393318930978565FC0ECB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BFFF4A822D0959800859F99 /* WebKit.framework */,
+				DDE8967A6BCAFA82A98E797B /* Pods_Walit_Driver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCD0CAB7222AEFE400A97A0D = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAC2222AEFE400A97A0D /* Walit Driver */,
+				DCD0CAC1222AEFE400A97A0D /* Products */,
+				72B8688CE19A3593E4E905A8 /* Pods */,
+				D393318930978565FC0ECB59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD0CAC1222AEFE400A97A0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAC0222AEFE400A97A0D /* Walit Driver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD0CAC2222AEFE400A97A0D /* Walit Driver */ = {
+			isa = PBXGroup;
+			children = (
+				6B13FA4F2260B9E9006608F3 /* Walit Driver.entitlements */,
+				6B5BBA3822587074006891B7 /* Model */,
+				6B5BBA352257BBF7006891B7 /* Handler */,
+				DCD0CAF9222BAB1E00A97A0D /* Cell */,
+				DCD0CAE0222AF74B00A97A0D /* Class */,
+				DCD0CAD5222AF2E100A97A0D /* ViewController */,
+				6B35BB9F22B7F28A004C1867 /* Appdelegate */,
+				6B35BBA022B7F2A7004C1867 /* Storyboard */,
+				6B35BB9E22B7F272004C1867 /* Resource */,
+				DCD0CACF222AEFE900A97A0D /* Info.plist */,
+				DCD0CB02222BCB9200A97A0D /* Images */,
+			);
+			path = "Walit Driver";
+			sourceTree = "<group>";
+		};
+		DCD0CAD5222AF2E100A97A0D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B15823F225C3CB100B0BB3B /* Complain */,
+				6B5BBA512259DABC006891B7 /* Bank Details */,
+				6B5BBA3D22587DF7006891B7 /* Forgot */,
+				6B35BB9822B7F21A004C1867 /* Account */,
+				6B35BB9722B7F20E004C1867 /* History */,
+				6B35BB9922B7F222004C1867 /* Other */,
+				6B158246225D113100B0BB3B /* Home */,
+				6B35BB9A22B7F22A004C1867 /* Side Menu */,
+				6B35BB9B22B7F232004C1867 /* Setting */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DCD0CAE0222AF74B00A97A0D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAE1222AFAEB00A97A0D /* Global.swift */,
+				DCD0CAD8222AF74500A97A0D /* Constants.swift */,
+				DCD0CADB222AF74500A97A0D /* iOSDevCenters+GIF.swift */,
+				DCD0CAE3222AFB0A00A97A0D /* Reach.swift */,
+				DCD0CAED222B9BB300A97A0D /* Shadow.swift */,
+				DCD0CB05222BCEAD00A97A0D /* RoundButton.swift */,
+				6B5BBA4622589185006891B7 /* LocationManager.swift */,
+				6BA72FDD22C7E03700E44861 /* TextField.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		DCD0CAF9222BAB1E00A97A0D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAFA222BAB2F00A97A0D /* HistoryTableViewCell.swift */,
+				DC0BC5A7222C0264003BAC42 /* SideMenuTableViewCell.swift */,
+				6B73D30F22B7F741006E4495 /* CashHistoryTableViewCell.swift */,
+				6BA72FD222BFAF0C00E44861 /* ProfileTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DCD0CB02222BCB9200A97A0D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0CAE5222AFBC100A97A0D /* walit-gif.gif */,
+				DCD0CAEB222AFF0C00A97A0D /* menu.png */,
+				DCD0CAE9222AFEA100A97A0D /* bell-musical-tool.png */,
+				DCD0CAF1222B9E1500A97A0D /* calendar.png */,
+				DCD0CAF3222B9F2300A97A0D /* hand.png */,
+				DCD0CAF5222B9F2C00A97A0D /* frontal-taxi-cab.png */,
+				DCD0CAE7222AFBC800A97A0D /* ezgif.com-gif-maker (2).gif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD0CABF222AEFE400A97A0D /* Walit Driver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD0CAD2222AEFE900A97A0D /* Build configuration list for PBXNativeTarget "Walit Driver" */;
+			buildPhases = (
+				A4B7B73865D0976F76F1046D /* [CP] Check Pods Manifest.lock */,
+				DCD0CABC222AEFE400A97A0D /* Sources */,
+				DCD0CABD222AEFE400A97A0D /* Frameworks */,
+				DCD0CABE222AEFE400A97A0D /* Resources */,
+				89BBAFFE1B6E01036F1C7026 /* [CP] Embed Pods Frameworks */,
+				17A40F97E47CBA84673B2478 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Walit Driver";
+			productName = "Walit Driver";
+			productReference = DCD0CAC0222AEFE400A97A0D /* Walit Driver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD0CAB8222AEFE400A97A0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Window;
+				TargetAttributes = {
+					DCD0CABF222AEFE400A97A0D = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DCD0CABB222AEFE400A97A0D /* Build configuration list for PBXProject "Walit Driver" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD0CAB7222AEFE400A97A0D;
+			productRefGroup = DCD0CAC1222AEFE400A97A0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD0CABF222AEFE400A97A0D /* Walit Driver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD0CABE222AEFE400A97A0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD0CACE222AEFE900A97A0D /* LaunchScreen.storyboard in Resources */,
+				DCD0CAF2222B9E1600A97A0D /* calendar.png in Resources */,
+				DCD0CAF4222B9F2300A97A0D /* hand.png in Resources */,
+				DCD0CAF6222B9F2C00A97A0D /* frontal-taxi-cab.png in Resources */,
+				DCD0CAE6222AFBC100A97A0D /* walit-gif.gif in Resources */,
+				DC0BC5B4222C422E003BAC42 /* home (1).png in Resources */,
+				DCD0CACB222AEFE900A97A0D /* Assets.xcassets in Resources */,
+				6B13FA4E2260B1AE006608F3 /* GoogleService-Info.plist in Resources */,
+				DCD0CAEA222AFEA100A97A0D /* bell-musical-tool.png in Resources */,
+				DCD0CAEC222AFF0C00A97A0D /* menu.png in Resources */,
+				DCD0CAC9222AEFE500A97A0D /* Main.storyboard in Resources */,
+				DCD0CAE8222AFBC800A97A0D /* ezgif.com-gif-maker (2).gif in Resources */,
+				6B13FA4A2260A2FD006608F3 /* alert.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17A40F97E47CBA84673B2478 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walit Driver/Pods-Walit Driver-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Walit Driver/Pods-Walit Driver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89BBAFFE1B6E01036F1C7026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walit Driver/Pods-Walit Driver-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Walit Driver/Pods-Walit Driver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B7B73865D0976F76F1046D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Walit Driver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD0CABC222AEFE400A97A0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0BC5B0222C1A20003BAC42 /* IntroViewController.swift in Sources */,
+				6B73D31022B7F741006E4495 /* CashHistoryTableViewCell.swift in Sources */,
+				DC0BC5AC222C06BD003BAC42 /* MainViewController.swift in Sources */,
+				6BA72FD322BFAF0C00E44861 /* ProfileTableViewCell.swift in Sources */,
+				6B35BB9D22B7F257004C1867 /* CashHistoryViewController.swift in Sources */,
+				6BA72FDC22C7DE1800E44861 /* ImageViewViewController.swift in Sources */,
+				DC0BC5AE222C0C4D003BAC42 /* SettingViewController.swift in Sources */,
+				6B5BBA4322588709006891B7 /* OTPVerifyViewController.swift in Sources */,
+				6BA72FDE22C7E03700E44861 /* TextField.swift in Sources */,
+				DCD0CAEE222B9BB300A97A0D /* Shadow.swift in Sources */,
+				DCD0CAD7222AF2F600A97A0D /* LoginViewController.swift in Sources */,
+				6B5BBA5A225AF8CE006891B7 /* BankHandler.swift in Sources */,
+				6B5BBA4722589185006891B7 /* LocationManager.swift in Sources */,
+				DCD0CAFD222BB1D700A97A0D /* PrivacyViewController.swift in Sources */,
+				DCD0CAF0222B9CA000A97A0D /* ProfileViewController.swift in Sources */,
+				6B5BBA532259DADA006891B7 /* BankDetailsViewController.swift in Sources */,
+				6B35BB9622B6A2C0004C1867 /* HistoryHandler.swift in Sources */,
+				6B5BBA3C22587749006891B7 /* ChanagePasswordHandler.swift in Sources */,
+				DCD0CAE4222AFB0B00A97A0D /* Reach.swift in Sources */,
+				DCD0CADF222AF74500A97A0D /* iOSDevCenters+GIF.swift in Sources */,
+				6B367F6022BF861800C58030 /* ChangePassViewController.swift in Sources */,
+				6B5BBA4122588085006891B7 /* ForgotPasswordHandler.swift in Sources */,
+				DCD0CAF8222BA13400A97A0D /* HistoryViewController.swift in Sources */,
+				DCD0CAFB222BAB2F00A97A0D /* HistoryTableViewCell.swift in Sources */,
+				DCD0CAC4222AEFE500A97A0D /* AppDelegate.swift in Sources */,
+				6B5BBA5C225AF960006891B7 /* Bank.swift in Sources */,
+				6B5BBA372257BC14006891B7 /* LoginHandler.swift in Sources */,
+				DCD0CB01222BB8C800A97A0D /* CollectCashViewController.swift in Sources */,
+				6B13FA4822607748006608F3 /* CompleteRideViewController.swift in Sources */,
+				DCD0CB04222BCBC600A97A0D /* HomeViewController.swift in Sources */,
+				DCD0CADC222AF74500A97A0D /* Constants.swift in Sources */,
+				6B13FA4422605196006608F3 /* Request.swift in Sources */,
+				6B158241225C3CD400B0BB3B /* ComplainViewController.swift in Sources */,
+				DCD0CB06222BCEAD00A97A0D /* RoundButton.swift in Sources */,
+				6BA72FDA22C77F8C00E44861 /* HostoryDetailViewController.swift in Sources */,
+				6B158243225C418B00B0BB3B /* ComplainHandler.swift in Sources */,
+				DC0BC5A8222C0264003BAC42 /* SideMenuTableViewCell.swift in Sources */,
+				6B5BBA552259DF3C006891B7 /* AddBankDetailViewController.swift in Sources */,
+				DCD0CAFF222BB1EC00A97A0D /* T&CViewController.swift in Sources */,
+				6BA72FD522BFB49000E44861 /* ProfileHandler.swift in Sources */,
+				DC0BC5AA222C0691003BAC42 /* NavigationController.swift in Sources */,
+				DC0BC5A6222C024E003BAC42 /* SideMenuViewController.swift in Sources */,
+				DCD0CAE2222AFAEB00A97A0D /* Global.swift in Sources */,
+				6B5BBA3F22587E0B006891B7 /* ForgotViewController.swift in Sources */,
+				6B5BBA4522588C80006891B7 /* ResetViewController.swift in Sources */,
+				6B5BBA3A22587080006891B7 /* User.swift in Sources */,
+				6B367F5E22BF6D1900C58030 /* CompleteRide.swift in Sources */,
+				6B158245225C465C00B0BB3B /* HomeHandler.swift in Sources */,
+				6B73D31222B7F83C006E4495 /* CashHistory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCD0CAC7222AEFE500A97A0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD0CAC8222AEFE500A97A0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCD0CACC222AEFE900A97A0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD0CACD222AEFE900A97A0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD0CAD0222AEFE900A97A0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Asheer Jaggessar (Y3CL89H8DA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCD0CAD1222AEFE900A97A0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Asheer Jaggessar (Y3CL89H8DA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD0CAD3222AEFE900A97A0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB807683AB16816208BFBDD9 /* Pods-Walit Driver.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Walit Driver/Walit Driver.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Asheer Jaggessar (MUKFQ3DL74)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y3CL89H8DA;
+				INFOPLIST_FILE = "Walit Driver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walit.taxidriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "walit taxi";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DCD0CAD4222AEFE900A97A0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D2E4A2D3C7007F54A96BD3 /* Pods-Walit Driver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Walit Driver/Walit Driver.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Asheer Jaggessar (Y3CL89H8DA)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y3CL89H8DA;
+				INFOPLIST_FILE = "Walit Driver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walit.taxidriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Walit Taxi Driver Distribution 31 July";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD0CABB222AEFE400A97A0D /* Build configuration list for PBXProject "Walit Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD0CAD0222AEFE900A97A0D /* Debug */,
+				DCD0CAD1222AEFE900A97A0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD0CAD2222AEFE900A97A0D /* Build configuration list for PBXNativeTarget "Walit Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD0CAD3222AEFE900A97A0D /* Debug */,
+				DCD0CAD4222AEFE900A97A0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD0CAB8222AEFE400A97A0D /* Project object */;
+}
