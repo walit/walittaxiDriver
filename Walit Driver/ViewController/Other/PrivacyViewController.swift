@@ -13,7 +13,7 @@ class PrivacyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "http://www.walit.net/")!
+        let url = URL(string: "http://walit.net/privacy_policy")!
         webview.load(URLRequest(url: url))
         webview.allowsBackForwardNavigationGestures = true
         // Do any additional setup after loading the view.

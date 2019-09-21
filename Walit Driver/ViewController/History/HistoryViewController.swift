@@ -79,10 +79,13 @@ class HistoryViewController: UIViewController {
                 rideHistory.getData(dict: item as! NSDictionary)
                 self.arrRideHistory.append(rideHistory)
             }
+            
+            self.arrRideHistory = self.arrRideHistory.reversed()
+            
             DispatchQueue.main.async {
                 self.tblView.reloadData()
                 self.lblTotalJobs.text = "Total jobs \n \(crditAmt)"
-                self.lblEarned.text = "Total Eraned \n \(debitAmt)"
+                self.lblEarned.text = "Earned \n \(debitAmt)"
                 
             }
         })

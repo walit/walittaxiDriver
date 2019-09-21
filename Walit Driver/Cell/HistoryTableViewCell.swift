@@ -10,6 +10,7 @@ import UIKit
 import AlamofireImage
 class HistoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lbl_Date: UILabel!
     @IBOutlet weak var imgUser: UIImageView!
     
     @IBOutlet weak var lblName: UILabel!
@@ -37,8 +38,9 @@ class HistoryTableViewCell: UITableViewCell {
     }
     func configureCell(_ rideHistory:RideHistory){
         self.lblName.text = rideHistory.customer_name
-        self.lblTime.text = rideHistory.time
-        self.lblAmount.text = rideHistory.total_paid_price
+        self.lblTime.text = rideHistory.second_milestone_duration
+        self.lbl_Date.text = rideHistory.date
+        self.lblAmount.text = rideHistory.earning_amount
         self.imgUser.af_setImage(withURL: URL.init(string: rideHistory.customer_img)!)
         self.lblDropOF.text = rideHistory.destination_address
         self.lblPickUp.text = rideHistory.origin_address

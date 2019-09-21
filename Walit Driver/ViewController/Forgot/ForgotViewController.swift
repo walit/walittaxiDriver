@@ -10,11 +10,13 @@ import UIKit
 
 class ForgotViewController: UIViewController {
 
+    @IBOutlet weak var imgView_Logo: UIImageView!
     @IBOutlet weak var txtMobile: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let jeremyGif = UIImage.gifImageWithName("logo_white_gif")
+        imgView_Logo.image = jeremyGif
         
     }
     

@@ -13,7 +13,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    var flagIsRemember:Bool? = Bool()
     
+    @IBAction func btn_RememberMe(_ sender: Any) {
+        if !flagIsRemember! {
+            btn_RememberMe.setImage(UIImage(named: "check_icon" ), for: .normal)
+            Preferences?.set(true, forKey: "isRemember")
+        } else {
+            btn_RememberMe.setImage(UIImage(named: "uncheck_icon" ), for: .normal)
+            Preferences?.set(false, forKey: "isRemember")
+        }
+        flagIsRemember = !flagIsRemember!
+    }
+    @IBOutlet weak var btn_RememberMe: UIButton!
     @IBOutlet weak var imgEye: UIImageView!
     
     override func viewDidLoad() {
@@ -22,6 +34,20 @@ class LoginViewController: UIViewController {
         imgLogo.image = jeremyGif
 //        txtPassword.text = "123456"
 //        txtUserName.text = "7987221189"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if Preferences?.object(forKey: "isRemember") != nil {
+            if (Preferences?.bool(forKey: "isRemember"))! {
+                if Preferences?.value(forKey: "mobile") != nil && Preferences?.value(forKey: "password") != nil {
+                    btn_RememberMe.setImage(UIImage(named: "check_icon" ), for: .normal)
+                    Preferences?.set(true, forKey: "isRemember")
+                    flagIsRemember = true
+                    txtUserName.text = Preferences?.value(forKey: "mobile") as? String
+                    txtPassword.text = Preferences?.value(forKey: "password") as? String
+                }
+            }
+        }
     }
     override func viewDidLayoutSubviews() {
           self.addGradientWithColor()
@@ -61,6 +87,13 @@ class LoginViewController: UIViewController {
             if success == true {
                 DispatchQueue.main.async {
                  
+                    print("flagremember = \(self.flagIsRemember)")
+                    Preferences?.set(true, forKey: "isLogin")
+                    Preferences?.set(self.txtUserName.text, forKey: "mobile")
+                    Preferences?.set(self.txtPassword.text, forKey: "password")
+                    Preferences?.synchronize()
+                    
+                    
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "setData"), object: nil, userInfo: nil)
                       LocationManager.manager.startLocation()
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)

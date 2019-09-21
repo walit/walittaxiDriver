@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 import SystemConfiguration
 
+
+let Preferences:UserDefaults? = UserDefaults.standard
 struct myColors
 {
     static let AppThemeColor: UIColor = UIColor(red: 153.0/255.0, green: 174.0/255.0, blue: 24.0/255.0, alpha: 1.0)

@@ -110,8 +110,19 @@ class HomeViewController: UIViewController {
         
         socket.on("get new request") { (items, ackEmitter) in
             self.playAudioFile()
+            DispatchQueue.main.async {
+                self.noCurrentTask.isHidden = true
+            }
             print(items)
-            self.getHomeData()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+                //DispatchQueue.global(qos: .background).async {
+                    self.getHomeData()
+                //}
+            }
+            
+            
+            
         }
         socket.on("get user cancel ride") { (items, ackEmitter) in
             self.viewStartRide.isHidden = true
@@ -207,6 +218,8 @@ class HomeViewController: UIViewController {
    
     func getHomeData(){
         HomeHandler.manager.getHomePageDetails(completion: {json,success,error,typeStr in
+            print("json = \(json)")
+            
             DispatchQueue.main.async {
                 if success == true {
                     self.noCurrentTask.isHidden = true

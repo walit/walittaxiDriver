@@ -172,11 +172,19 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         completionHandler()
     }
     func resetDefaults() {
-        showAlertFor(alertTitle: "Error", alertMessage: "Invalid Token")
+        showAlertFor(alertTitle: "", alertMessage: "Logout Successfully")
+        let email = Preferences?.value(forKey: "mobile")
+        let password = Preferences?.value(forKey: "password")
+        let isRemember = Preferences?.value(forKey: "isRemember")
+        
         let defaults = UserDefaults.standard
         let dictionary = defaults.dictionaryRepresentation()
         dictionary.keys.forEach { key in
             defaults.removeObject(forKey: key)
         }
+        
+        Preferences?.setValue(email, forKey: "mobile")
+        Preferences?.setValue(password, forKey: "password")
+        Preferences?.set(isRemember, forKey: "isRemember")
     }
 }

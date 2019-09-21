@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2A4C342334EF9100677B3A /* MRGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A4C332334EF9100677B3A /* MRGradientView.swift */; };
+		0F2A4C362334F11200677B3A /* logo_white_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F2A4C352334F11200677B3A /* logo_white_gif.gif */; };
+		0F2A4C382334F74300677B3A /* PinCode TextField in Resources */ = {isa = PBXBuildFile; fileRef = 0F2A4C372334F74300677B3A /* PinCode TextField */; };
 		6B13FA4422605196006608F3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13FA4322605196006608F3 /* Request.swift */; };
 		6B13FA4822607748006608F3 /* CompleteRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13FA4722607748006608F3 /* CompleteRideViewController.swift */; };
 		6B13FA4A2260A2FD006608F3 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B13FA492260A2FD006608F3 /* alert.mp3 */; };
@@ -74,6 +77,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F2A4C332334EF9100677B3A /* MRGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRGradientView.swift; sourceTree = "<group>"; };
+		0F2A4C352334F11200677B3A /* logo_white_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo_white_gif.gif; sourceTree = "<group>"; };
+		0F2A4C372334F74300677B3A /* PinCode TextField */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PinCode TextField"; sourceTree = "<group>"; };
 		6B13FA4322605196006608F3 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		6B13FA4722607748006608F3 /* CompleteRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRideViewController.swift; sourceTree = "<group>"; };
 		6B13FA492260A2FD006608F3 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
@@ -229,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				6B13FA492260A2FD006608F3 /* alert.mp3 */,
+				0F2A4C352334F11200677B3A /* logo_white_gif.gif */,
 				6B13FA4D2260B1AE006608F3 /* GoogleService-Info.plist */,
 				DCD0CACA222AEFE900A97A0D /* Assets.xcassets */,
 				DC0BC5B3222C422D003BAC42 /* home (1).png */,
@@ -372,6 +379,8 @@
 		DCD0CAE0222AF74B00A97A0D /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0F2A4C372334F74300677B3A /* PinCode TextField */,
+				0F2A4C332334EF9100677B3A /* MRGradientView.swift */,
 				DCD0CAE1222AFAEB00A97A0D /* Global.swift */,
 				DCD0CAD8222AF74500A97A0D /* Constants.swift */,
 				DCD0CADB222AF74500A97A0D /* iOSDevCenters+GIF.swift */,
@@ -475,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2A4C382334F74300677B3A /* PinCode TextField in Resources */,
 				DCD0CACE222AEFE900A97A0D /* LaunchScreen.storyboard in Resources */,
 				DCD0CAF2222B9E1600A97A0D /* calendar.png in Resources */,
 				DCD0CAF4222B9F2300A97A0D /* hand.png in Resources */,
@@ -487,6 +497,7 @@
 				DCD0CAEC222AFF0C00A97A0D /* menu.png in Resources */,
 				DCD0CAC9222AEFE500A97A0D /* Main.storyboard in Resources */,
 				DCD0CAE8222AFBC800A97A0D /* ezgif.com-gif-maker (2).gif in Resources */,
+				0F2A4C362334F11200677B3A /* logo_white_gif.gif in Resources */,
 				6B13FA4A2260A2FD006608F3 /* alert.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +625,7 @@
 				6B13FA4822607748006608F3 /* CompleteRideViewController.swift in Sources */,
 				DCD0CB04222BCBC600A97A0D /* HomeViewController.swift in Sources */,
 				DCD0CADC222AF74500A97A0D /* Constants.swift in Sources */,
+				0F2A4C342334EF9100677B3A /* MRGradientView.swift in Sources */,
 				6B13FA4422605196006608F3 /* Request.swift in Sources */,
 				6B158241225C3CD400B0BB3B /* ComplainViewController.swift in Sources */,
 				DCD0CB06222BCEAD00A97A0D /* RoundButton.swift in Sources */,
@@ -790,7 +802,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.walit.taxidriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "walit taxi";
+				PROVISIONING_PROFILE_SPECIFIER = "Walit Taxi Driver Dev 20 Sep 2019";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -802,7 +814,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Walit Driver/Walit Driver.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Asheer Jaggessar (Y3CL89H8DA)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Asheer Jaggessar (MUKFQ3DL74)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y3CL89H8DA;
 				INFOPLIST_FILE = "Walit Driver/Info.plist";
@@ -813,7 +825,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.walit.taxidriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Walit Taxi Driver Distribution 31 July";
+				PROVISIONING_PROFILE_SPECIFIER = "Walit Taxi Driver Dev 20 Sep 2019";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
