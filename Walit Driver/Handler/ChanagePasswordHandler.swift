@@ -88,11 +88,11 @@ class ChanagePasswordHandler: NSObject {
             "cache-control": "no-cache",
             "postman-token": "ed6a4fdd-9a1c-b350-714c-0aa629d060d3"
         ]
-        self.callMultipartApi("http://walit.net/api/taxidriver/v1/TaxiDriverImageUpload", param: [:], imageArray: [image], method: .post, header: headers as? [String : String], encodeType: .default, videoData: nil, imageNameArray: ["profile"], completion: {success,_ in
+        self.callMultipartApi("http://walit.net/api/taxidriver/v1/TaxiDriverImageUpload", param: [:], imageArray: [image], method: .post, header: headers as? [String : String], encodeType: .default, videoData: nil, imageNameArray: ["driver_image"], completion: {success,message in
                 if success == false{
                   completion(success,"fail upload image")
                 }else{
-                  completion(success,"successfully upload image")
+                  completion(success,message)
                 }
             
         })
@@ -140,8 +140,14 @@ class ChanagePasswordHandler: NSObject {
                         // print("response \(response)")
                         
                         if response.result.isSuccess {
-                          
-                            completion(true, "")
+                            
+                            if let dict = response.result.value {
+                                print(dict)
+                                let datadict = (dict as AnyObject).value(forKey: "data") as! [String:Any]
+                                let imageUrl = datadict["image_url"] as? String
+                                completion(true, imageUrl ?? "")
+                            }
+                           
                         }
                         else{
                             

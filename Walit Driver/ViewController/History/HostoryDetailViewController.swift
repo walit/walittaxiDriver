@@ -31,7 +31,7 @@ class HostoryDetailViewController: UIViewController {
         super.viewDidLoad()
         self.lblName.text = history.customer_name
         self.lblBookingNumber.text = "Booking N \(history.booking_number ?? "")"
-        self.lblDate.text = history.date
+        self.lblDate.text = history.date  + " " + history.time
         self.lblDistance.text = history.first_milestone_distance
         self.lblTime.text = history.first_milestone_duration
         self.lblPickup.text = history.origin_address

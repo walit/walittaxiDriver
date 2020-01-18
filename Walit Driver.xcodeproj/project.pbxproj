@@ -790,7 +790,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.walit.taxidriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "walit taxi";
+				PROVISIONING_PROFILE_SPECIFIER = "Walit Taxi Driver Dev 20 Sep 2019";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -813,7 +813,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.walit.taxidriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Walit Taxi Driver Distribution 31 July";
+				PROVISIONING_PROFILE_SPECIFIER = "Walit Taxi Driver Distribution 21 Sept";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

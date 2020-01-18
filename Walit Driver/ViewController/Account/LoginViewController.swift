@@ -14,7 +14,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
+    @IBOutlet weak var btnRemember: UIButton!
     @IBOutlet weak var imgEye: UIImageView!
+    var remember = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,18 @@ class LoginViewController: UIViewController {
             txtPassword.isSecureTextEntry = true
         }
     }
+    
+    @IBAction func btnRememberMe(_ sender: Any) {
+        if remember{
+             remember = false
+            btnRemember.setImage(UIImage(named: "baseline_check_box_outline_blank_black_24"), for: .normal)
+        }else{
+            remember = true
+            btnRemember.setImage(UIImage(named: "ic_check_xxxhdpi"), for: .normal)
+        }
+    }
+    
+    
     @IBAction func btnForgot(_ sender: Any) {
         let vc  = self.storyboard?.instantiateViewController(withIdentifier: "ForgotViewController") as! ForgotViewController
         self.navigationController?.pushViewController(vc, animated: true)
@@ -60,6 +74,9 @@ class LoginViewController: UIViewController {
         LoginHandler.manager.SignInHandler(username: self.txtUserName.text!,password: txtPassword.text!,device: "2"){user,success,error in
             if success == true {
                 DispatchQueue.main.async {
+                    if self.remember{
+                         UserDefaults.standard.set(true, forKey: "islogin")
+                    }
                  
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "setData"), object: nil, userInfo: nil)
                       LocationManager.manager.startLocation()

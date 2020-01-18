@@ -44,9 +44,9 @@ class ChangePassViewController: UIViewController {
     @IBAction func btnShowHide2(_ sender: Any) {
         if txtNewPassword.isSecureTextEntry{
             txtNewPassword.isSecureTextEntry = false
-            imgEye2.image = UIImage(named: "icon_hide_password_green")
+            imgEye3.image = UIImage(named: "icon_hide_password_green")
         }else{
-            imgEye2.image = UIImage(named: "baseline_remove_red_eye_black_48")
+            imgEye3.image = UIImage(named: "baseline_remove_red_eye_black_48")
             txtNewPassword.isSecureTextEntry = true
         }
     }
@@ -54,9 +54,9 @@ class ChangePassViewController: UIViewController {
     @IBAction func btnShowHide3(_ sender: Any) {
         if txtReEnterPassword.isSecureTextEntry{
             txtReEnterPassword.isSecureTextEntry = false
-            imgEye3.image = UIImage(named: "icon_hide_password_green")
+            imgEye2.image = UIImage(named: "icon_hide_password_green")
         }else{
-            imgEye3.image = UIImage(named: "baseline_remove_red_eye_black_48")
+            imgEye2.image = UIImage(named: "baseline_remove_red_eye_black_48")
             txtReEnterPassword.isSecureTextEntry = true
         }
     }

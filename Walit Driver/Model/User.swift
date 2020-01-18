@@ -9,6 +9,7 @@
 import UIKit
 
 class User: NSObject {
+    
     var access_token : String!
     var driver_id : String!
     var email : String!
@@ -19,6 +20,7 @@ class User: NSObject {
     var longitude : String!
     var phone : String!
     var refer_code : String!
+    var taxi_title: String!
     func setData(dict: NSDictionary) {
         self.access_token = dict.value(forKey: "access_token") as? String
         self.driver_id = dict.value(forKey: "driver_id") as? String
@@ -30,5 +32,6 @@ class User: NSObject {
         self.longitude = dict.value(forKey: "longitude") as? String
         self.phone = dict.value(forKey: "phone") as? String
         self.refer_code = dict.value(forKey: "refer_code") as? String
+        self.taxi_title = dict.value(forKey: "taxi_title") as? String
     }
 }

@@ -9,8 +9,8 @@
 import UIKit
 
 class SideMenuTableViewCell: UITableViewCell {
-    var arr = ["Home","Ride History","Profile","Cash History","Help","Complain","Setting","Bank details","Privacy Policy","Terms of Use"]
-    var arrimages = ["home (1)","icon_all_order","icon_user_default","icon_all_order","icon_all_order","icon_all_order","icon_setting","icon_money","icon_privacy_policy","icon_privacy_policy","icon_privacy_policy"]
+    var arr = ["Home","Ride History","Profile","Cash History","Complain","Setting","Bank details","Privacy Policy","Terms of Use"]
+    var arrimages = ["home (1)","icon_all_order","icon_user_default","icon_all_order","icon_all_order","icon_setting","icon_money","icon_privacy_policy","icon_privacy_policy","icon_privacy_policy"]
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     

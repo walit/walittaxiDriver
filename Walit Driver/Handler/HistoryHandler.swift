@@ -89,14 +89,17 @@ class HistoryHandler: NSObject {
             "access-token": Global.sharedInstance.user.access_token,
             "date":date
             ]
-        
-        
+        let parameters = [
+            "date": date,
+            
+            ] as [String : Any]
+        let postData = try? JSONSerialization.data(withJSONObject: parameters, options: [])
         let request = NSMutableURLRequest(url: NSURL(string: "http://walit.net/api/taxidriver/v1/TaxiDriverIncomeHistory")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = headers as! [String : String]
-        
+        request.httpBody =  postData as? Data
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
             Miscellaneous.APPDELEGATE.window!.stopMyToastActivity()

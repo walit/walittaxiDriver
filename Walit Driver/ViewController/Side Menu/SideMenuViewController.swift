@@ -14,7 +14,7 @@ class SideMenuViewController: UIViewController ,LGSideMenuDelegate{
     @IBOutlet weak var lblMobile: UILabel!
     @IBOutlet weak var imgUser: UIImageView!
     @IBOutlet weak var tblView: UITableView!
-    var arr = ["Home","Ride History","Profile","Cash History","Help","Complain","Setting","Bank details","Privacy Policy","Terms of Use","Logout"]
+    var arr = ["Home","Ride History","Profile","Cash History","Complain","Setting","Bank details","Privacy Policy","Terms of Use","Logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
         tblView.tableFooterView = UIView()
@@ -74,14 +74,14 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 10 {
+        if indexPath.row == 9 {
             let cell =  tableView.dequeueReusableCell(withIdentifier: "SideMenuTableViewCell1", for: indexPath) as! SideMenuTableViewCell
             tableView.separatorStyle = .none
             return cell
         }else{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "SideMenuTableViewCell", for: indexPath) as! SideMenuTableViewCell
             
-           if indexPath.row == 10{
+           if indexPath.row == 9{
                 tableView.separatorStyle = .none
            }else{
                 tableView.separatorStyle = .singleLine
@@ -92,7 +92,7 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 10{
+        if indexPath.row == 9{
             return 70
         }else{
             return 50
@@ -156,17 +156,17 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             window.rootViewController = mainViewController
             
             UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
+       // }else if indexPath.row == 5{
+//            navigationController.setViewControllers([storyboard.instantiateViewController(withIdentifier: "ComplainViewController")], animated: false)
+//            let mainViewController = storyboard.instantiateInitialViewController() as! MainViewController
+//            mainViewController.rootViewController = navigationController
+//            mainViewController.setup(type:2)
+//
+//            let window = UIApplication.shared.delegate!.window!!
+//            window.rootViewController = mainViewController
+//
+//            UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
         }else if indexPath.row == 5{
-            navigationController.setViewControllers([storyboard.instantiateViewController(withIdentifier: "ComplainViewController")], animated: false)
-            let mainViewController = storyboard.instantiateInitialViewController() as! MainViewController
-            mainViewController.rootViewController = navigationController
-            mainViewController.setup(type:2)
-            
-            let window = UIApplication.shared.delegate!.window!!
-            window.rootViewController = mainViewController
-            
-            UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
-        }else if indexPath.row == 6{
             navigationController.setViewControllers([storyboard.instantiateViewController(withIdentifier: "SettingViewController")], animated: false)
             let mainViewController = storyboard.instantiateInitialViewController() as! MainViewController
             mainViewController.rootViewController = navigationController
@@ -176,7 +176,7 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             window.rootViewController = mainViewController
             
             UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
-        }else if indexPath.row == 8{
+        }else if indexPath.row == 7{
             navigationController.setViewControllers([storyboard.instantiateViewController(withIdentifier: "PrivacyViewController")], animated: false)
             let mainViewController = storyboard.instantiateInitialViewController() as! MainViewController
             mainViewController.rootViewController = navigationController
@@ -186,7 +186,7 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             window.rootViewController = mainViewController
             
             UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
-        }else if indexPath.row == 7{
+        }else if indexPath.row == 6{
             navigationController.setViewControllers([storyboard.instantiateViewController(withIdentifier: "BankDetailsViewController")], animated: false)
             let mainViewController = storyboard.instantiateInitialViewController() as! MainViewController
             mainViewController.rootViewController = navigationController
@@ -196,7 +196,7 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             window.rootViewController = mainViewController
             
             UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)//
-        }else if indexPath.row == 9{
+        }else if indexPath.row == 8{
             navigationController.setViewControllers([storyboard.instantiateViewController(withIdentifier: "T_CViewController")], animated: false)
             let mainViewController = storyboard.instantiateInitialViewController() as! MainViewController
             mainViewController.rootViewController = navigationController
@@ -206,7 +206,7 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             window.rootViewController = mainViewController
             
             UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)//BankDetailsViewController
-        }else if indexPath.row == 10{
+        }else if indexPath.row == 9{
             let alert = UIAlertController(title: "Logout", message: "Sure you want to logout?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "YES", style: .default, handler: { action in
                 LoginHandler.manager.logoutHandler();

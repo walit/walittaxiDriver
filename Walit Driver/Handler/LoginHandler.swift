@@ -66,7 +66,7 @@ class LoginHandler: NSObject {
                     print(array)
                     if let dic  = array["data"] as? NSDictionary{
                         print(dic)
-                           UserDefaults.standard.set(true, forKey: "islogin")
+                          
                            UserDefaults.standard.set(username, forKey: "username")
                            UserDefaults.standard.set(password, forKey: "password")
                        let user = User()

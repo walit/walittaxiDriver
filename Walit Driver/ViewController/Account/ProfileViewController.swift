@@ -9,16 +9,14 @@
 import UIKit
 import AlamofireImage
 class ProfileViewController: UIViewController ,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    @IBOutlet weak var lblCategory: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblMobileNumer: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var imgUser: UIImageView!
     @IBOutlet weak var lblCounty: UILabel!
-    
     @IBOutlet weak var lblVehicle: UILabel!
-    
-    
     
     var result = NSDictionary()
     
@@ -48,18 +46,18 @@ class ProfileViewController: UIViewController ,UIImagePickerControllerDelegate,U
                  self.result = result
                  self.tableView.reloadData()
                
-                if  let courrnecy =  result.value(forKey: "country_name") as? String{
+                if  let courrnecy =  result.value(forKey: "driver_currency") as? String{
                    if let country_name = result.value(forKey: "country_name") as? String{
-                        self.lblCounty.text = country_name + courrnecy
+                        self.lblCounty.text = country_name + "," + courrnecy
                     }
                     
                 }
-                if  let taxi_owner =  result.value(forKey: "country_name") as? String{
+                if  let taxi_owner =  result.value(forKey: "taxi_owner") as? String{
                     self.lblVehicle.text = "Taxi Owner: " + taxi_owner
                     
                 }
                 
-                
+                self.lblCategory.text = "Category: " + Global.sharedInstance.user.taxi_title
             }
            
         })
@@ -139,6 +137,7 @@ class ProfileViewController: UIViewController ,UIImagePickerControllerDelegate,U
         ChanagePasswordHandler.manager.uploadImage(image: imgUser.image!, completion: {success,message in
             if success == true{
                 Miscellaneous.APPDELEGATE.showAlertFor(alertTitle: "Success", alertMessage: "Image uplaod sucessfully.")
+                Global.sharedInstance.user.image = message
             }else{
                 Miscellaneous.APPDELEGATE.showAlertFor(alertTitle: "Error", alertMessage: message)
             }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComplainViewController: UIViewController {
+class ComplainViewController: UIViewController,UITextViewDelegate {
 
     @IBOutlet weak var txtSubject: UITextField!
     @IBOutlet weak var txtDescrption: UITextView!
@@ -23,6 +23,8 @@ class ComplainViewController: UIViewController {
         }else{
             self.lblTitle.text = "Complain"
         }
+        txtDescrption.delegate = self
+        txtDescrption.textColor = UIColor.lightGray
         // Do any additional setup after loading the view.
     }
     @IBAction func btnSubmit(_ sender: Any) {
@@ -51,6 +53,16 @@ class ComplainViewController: UIViewController {
             
         })
     }
-    
-
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "enter description"
+            textView.textColor = UIColor.lightGray
+        }
+    }
 }
